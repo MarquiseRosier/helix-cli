@@ -100,12 +100,28 @@ class InitCommand {
     }
 
     // #181 cover edge case: make sure git is properly configured
+    try{
+        var git_check = 'git --version';
+        var ret = await execAsync(git_check).then(function(result){console.log(result)});
+        if(ret === 0){
+          throw new Error(
+            `You have Git instaled, but you haven't configured it. Please use git config --global
+             This will create a .gitconfig`
+          )
+        }
+    }catch(e){
+      throw new Error(
+        `It seems like Git has not yet been setup on this system 
+        See https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup for more information.`)
+    }
+    /*
     if (!await fse.pathExists(`${os.homedir()}/.gitconfig`)) {
       throw new Error(`
-It seems like Git has not yet been setup on this system. 
+        It seems like Git has not yet been setup on this system. 
 
 See https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup for more information.  
 `);
+    */
     }
 
     this._padding = this._name.length + 45;
