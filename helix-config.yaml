@@ -13,3 +13,10 @@ strains:
     content: https://github.com/MarquiseRosier/helix-cli/entry
     static: https://github.com/MarquiseRosier/helix-cli/entry/htdocs#master
     package: mrosier/5e6b4cd59edf91c045b82525a8a5fe822f49650b
+
+  - name: newnew
+    code: https://www.github.com/MarquiseRosier/helix-cli.git#master
+    content: https://github.com/MarquiseRosier/helix-cli.git/entry#master
+    static: https://github.com/MarquiseRosier/helix-cli.git/entry/htdocs#master
+    package: mrosier/www-github-com--MarquiseRosier--helix-cli--master-dirty
+    condition: req.http.post == "https://www.adobe.io"
