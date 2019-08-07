@@ -1,0 +1,15 @@
+#
+# helix configuration for local development
+#
+version: 1
+
+definitions:
+  defaults:
+    - &defaultRepo "https://github.com/MarquiseRosier/helix-cli/tree/master/entry"
+
+strains:
+  - name: default
+    code: https://github.com/MarquiseRosier/helix-cli/entry
+    content: https://github.com/MarquiseRosier/helix-cli/entry
+    static: https://github.com/MarquiseRosier/helix-cli/entry/htdocs#master
+    package: mrosier/5e6b4cd59edf91c045b82525a8a5fe822f49650b

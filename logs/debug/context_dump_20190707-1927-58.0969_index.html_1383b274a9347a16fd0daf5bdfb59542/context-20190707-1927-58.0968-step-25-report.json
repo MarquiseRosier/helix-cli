@@ -1,0 +1,94 @@
+{
+  "request": {
+    "params": {},
+    "headers": {
+      "x-openwhisk-activation-id": "1383b274a9347a16fd0daf5bdfb59542",
+      "x-request-id": "Qzkm8wNpszYrNWU+oW2oAPlEwhNYj+gY",
+      "x-backend-name": "localhost--F_Petridish",
+      "x-cdn-request-id": "16ca18ce-04f9-5f32-f1c5-e5f6010be553",
+      "x-strain": "default",
+      "x-old-url": "/",
+      "x-repo-root-path": "",
+      "host": "localhost:3000",
+      "if-none-match": "W/\"b33-j8mO5eMQh4KBW7eOTXYh/2zXuys\"",
+      "upgrade-insecure-requests": "1",
+      "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1.2 Safari/605.1.15",
+      "accept-language": "en-us",
+      "accept-encoding": "gzip, deflate",
+      "connection": "keep-alive"
+    },
+    "method": "get",
+    "path": "/index.html",
+    "extension": "html",
+    "selector": "",
+    "url": "/index.html",
+    "rootPath": "",
+    "pathInfo": "/index.html"
+  },
+  "content": {},
+  "response": {
+    "status": 404
+  },
+  "error": {
+    "name": "StatusCodeError",
+    "statusCode": 404,
+    "message": "404 - \"404: Not Found\\n\"",
+    "error": "404: Not Found\n",
+    "options": {
+      "uri": "https://raw.github.com/MarquiseRosier/helix-cli/master/index.md",
+      "json": false,
+      "timeout": 1000,
+      "time": true,
+      "simple": true,
+      "resolveWithFullResponse": false,
+      "transform2xxOnly": false
+    },
+    "response": {
+      "statusCode": 404,
+      "body": "404: Not Found\n",
+      "headers": {
+        "content-security-policy": "default-src 'none'; style-src 'unsafe-inline'; sandbox",
+        "strict-transport-security": "max-age=31536000",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "deny",
+        "x-xss-protection": "1; mode=block",
+        "x-github-request-id": "12AE:4586:395734:3F4A99:5D4B263C",
+        "content-length": "15",
+        "accept-ranges": "bytes",
+        "date": "Wed, 07 Aug 2019 19:27:58 GMT",
+        "via": "1.1 varnish",
+        "connection": "close",
+        "x-served-by": "cache-sjc3140-SJC",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1565206079.793837,VS0,VE163",
+        "vary": "Authorization,Accept-Encoding",
+        "access-control-allow-origin": "*",
+        "x-fastly-request-id": "eefa6a3878c5a69f55c2796010726db705f3942b",
+        "expires": "Wed, 07 Aug 2019 19:32:58 GMT",
+        "source-age": "0"
+      },
+      "request": {
+        "uri": {
+          "protocol": "https:",
+          "slashes": true,
+          "auth": null,
+          "host": "raw.githubusercontent.com",
+          "port": 443,
+          "hostname": "raw.githubusercontent.com",
+          "hash": null,
+          "search": null,
+          "query": null,
+          "pathname": "/MarquiseRosier/helix-cli/master/index.md",
+          "path": "/MarquiseRosier/helix-cli/master/index.md",
+          "href": "https://raw.githubusercontent.com/MarquiseRosier/helix-cli/master/index.md"
+        },
+        "method": "GET",
+        "headers": {
+          "referer": "https://raw.github.com/MarquiseRosier/helix-cli/master/index.md"
+        }
+      }
+    }
+  }
+}

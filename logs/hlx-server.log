@@ -1,0 +1,330 @@
+2019-08-07T00:17:16.135Z debug: Initialized helix-config with: 
+2019-08-07T00:17:16.136Z debug:      srcPath: /Users/mrosier/OneDrive - Adobe Systems Incorporated/Documents/helix/helix-cli/entry/src
+2019-08-07T00:17:16.136Z debug:     buildDir: /Users/mrosier/OneDrive - Adobe Systems Incorporated/Documents/helix/helix-cli/entry/.hlx/build
+2019-08-07T00:17:17.280Z debug: Launching helix simulation server for development...
+2019-08-07T00:17:17.286Z info: Starting helix-simulator v2.12.18
+2019-08-07T00:17:17.289Z info: Local Helix Dev server up and running: http://localhost:3000/
+2019-08-07T00:17:17.375Z debug: current strain: default: {
+  "code": "http://localhost/local/default.git#master",
+  "content": "http://localhost/local/default.git#master",
+  "static": "http://localhost/local/default.git/htdocs#master",
+  "directoryIndex": "index.html",
+  "name": "default"
+}
+2019-08-07T00:17:17.376Z debug: Launching local git server...
+2019-08-07T00:17:17.383Z debug: git emulating http://localhost/local/default.git#master via http://127.0.0.1:60597/helix/localhost--local--default.git#master from './'
+2019-08-07T00:17:17.385Z debug: resolved /index.html -> html
+2019-08-07T00:17:18.598Z debug: Constructing HTML Pipeline
+2019-08-07T00:17:18.598Z debug: Creating pipeline
+2019-08-07T00:17:18.600Z debug: initializing ajv {"useDefaults":true,"coerceTypes":true}
+2019-08-07T00:17:18.621Z debug: - https://ns.adobe.com/helix/pipeline/action
+2019-08-07T00:17:18.622Z debug: - https://ns.adobe.com/helix/pipeline/content
+2019-08-07T00:17:18.622Z debug: - https://ns.adobe.com/helix/pipeline/context
+2019-08-07T00:17:18.623Z debug: - https://ns.adobe.com/helix/pipeline/mdast
+2019-08-07T00:17:18.623Z debug: - https://ns.adobe.com/helix/pipeline/meta
+2019-08-07T00:17:18.624Z debug: - https://ns.adobe.com/helix/pipeline/position
+2019-08-07T00:17:18.624Z debug: - https://ns.adobe.com/helix/pipeline/rawrequest
+2019-08-07T00:17:18.625Z debug: - https://ns.adobe.com/helix/pipeline/request
+2019-08-07T00:17:18.625Z debug: - https://ns.adobe.com/helix/pipeline/response
+2019-08-07T00:17:18.625Z debug: - https://ns.adobe.com/helix/pipeline/secrets
+2019-08-07T00:17:18.625Z debug: - https://ns.adobe.com/helix/pipeline/section
+2019-08-07T00:17:18.626Z debug: - https://ns.adobe.com/helix/pipeline/textcoordinates
+2019-08-07T00:17:18.626Z debug: ajv initialized
+2019-08-07T00:17:18.626Z debug: Coercing secrets
+2019-08-07T00:17:18.629Z debug: Running HTML pipeline
+2019-08-07T00:17:18.630Z debug: initializing ajv {}
+2019-08-07T00:17:18.635Z debug: - https://ns.adobe.com/helix/pipeline/action
+2019-08-07T00:17:18.635Z debug: - https://ns.adobe.com/helix/pipeline/content
+2019-08-07T00:17:18.635Z debug: - https://ns.adobe.com/helix/pipeline/context
+2019-08-07T00:17:18.636Z debug: - https://ns.adobe.com/helix/pipeline/mdast
+2019-08-07T00:17:18.636Z debug: - https://ns.adobe.com/helix/pipeline/meta
+2019-08-07T00:17:18.636Z debug: - https://ns.adobe.com/helix/pipeline/position
+2019-08-07T00:17:18.636Z debug: - https://ns.adobe.com/helix/pipeline/rawrequest
+2019-08-07T00:17:18.637Z debug: - https://ns.adobe.com/helix/pipeline/request
+2019-08-07T00:17:18.637Z debug: - https://ns.adobe.com/helix/pipeline/response
+2019-08-07T00:17:18.637Z debug: - https://ns.adobe.com/helix/pipeline/secrets
+2019-08-07T00:17:18.637Z debug: - https://ns.adobe.com/helix/pipeline/section
+2019-08-07T00:17:18.637Z debug: - https://ns.adobe.com/helix/pipeline/textcoordinates
+2019-08-07T00:17:18.637Z debug: ajv initialized
+2019-08-07T00:17:18.651Z debug: fetching Markdown from http://127.0.0.1:60597/raw/helix/localhost--local--default/master/index.md
+2019-08-07T00:17:18.690Z debug: Parsing markdown from request body starting with <!--
+2019-08-07T00:17:18.719Z debug: Parsing Markdown Metadata from 1 sections
+2019-08-07T00:17:18.725Z debug: Turning Markdown into HTML from object
+2019-08-07T00:17:18.774Z debug: Setting Surrogate-Key header
+2019-08-07T00:17:18.791Z debug: total processing time: 162.637663ms
+2019-08-07T00:17:18.791Z debug: timing: p00;dur=0.765163;desc=resolveRef ,p01;dur=39.838405;desc=fetch ,p02;dur=11.163949;desc=parseMarkdown ,p03;dur=2.002746;desc=parseFrontmatter ,p04;dur=1.565626;desc=find ,p05;dur=10.336598;desc=reformat ,p06;dur=3.521858;desc=split ,p07;dur=2.760958;desc=getmetadata ,p08;dur=1.044087;desc=unwrap ,p09;dur=0.923928;desc=selectstrain ,p10;dur=1.075013;desc=selecttest ,p11;dur=24.572273;desc=html ,p12;dur=0.752466;desc=sanitize ,p13;dur=22.46153;desc=once ,p14;dur=0.759228;desc=setmime ,p15;dur=0.759505;desc=cache ,p16;dur=3.232391;desc=key ,p17;dur=5.298459;desc=tovdom ,p18;dur=1.038392;desc=clean ,p19;dur=0.97554;desc=rewrite ,p20;dur=2.626017;desc=addHeaders ,p21;dur=1.564132;desc=stringify ,p22;dur=0.909718;desc=flag ,p23;dur=0.919325;desc=debug ,p24;dur=0.111642;desc=report
+2019-08-07T00:17:18.798Z debug: current strain: default: {
+  "code": "http://localhost/local/default.git#master",
+  "content": {
+    "protocol": "http",
+    "host": "127.0.0.1:60597",
+    "port": 60597,
+    "hostname": "127.0.0.1",
+    "owner": "helix",
+    "repo": "localhost--local--default",
+    "ref": "master"
+  },
+  "static": {
+    "protocol": "http",
+    "host": "127.0.0.1:60597",
+    "port": 60597,
+    "hostname": "127.0.0.1",
+    "owner": "helix",
+    "repo": "localhost--local--default",
+    "ref": "master",
+    "path": "/htdocs"
+  },
+  "directoryIndex": "index.html",
+  "name": "default"
+}
+2019-08-07T00:17:18.798Z debug: resolved /style.css -> css
+2019-08-07T00:17:18.799Z debug: fetching static resource from http://127.0.0.1:60597/raw/helix/localhost--local--default/master/style.css
+2019-08-07T00:17:18.801Z debug: current strain: default: {
+  "code": "http://localhost/local/default.git#master",
+  "content": {
+    "protocol": "http",
+    "host": "127.0.0.1:60597",
+    "port": 60597,
+    "hostname": "127.0.0.1",
+    "owner": "helix",
+    "repo": "localhost--local--default",
+    "ref": "master"
+  },
+  "static": {
+    "protocol": "http",
+    "host": "127.0.0.1:60597",
+    "port": 60597,
+    "hostname": "127.0.0.1",
+    "owner": "helix",
+    "repo": "localhost--local--default",
+    "ref": "master",
+    "path": "/htdocs"
+  },
+  "directoryIndex": "index.html",
+  "name": "default"
+}
+2019-08-07T00:17:18.801Z debug: resolved /helix_logo.png -> png
+2019-08-07T00:17:18.801Z debug: fetching static resource from http://127.0.0.1:60597/raw/helix/localhost--local--default/master/helix_logo.png
+2019-08-07T00:17:18.808Z debug: fetching static resource from http://127.0.0.1:60597/raw/helix/localhost--local--default/master/htdocs/style.css
+2019-08-07T00:17:18.866Z debug: current strain: default: {
+  "code": "http://localhost/local/default.git#master",
+  "content": {
+    "protocol": "http",
+    "host": "127.0.0.1:60597",
+    "port": 60597,
+    "hostname": "127.0.0.1",
+    "owner": "helix",
+    "repo": "localhost--local--default",
+    "ref": "master"
+  },
+  "static": {
+    "protocol": "http",
+    "host": "127.0.0.1:60597",
+    "port": 60597,
+    "hostname": "127.0.0.1",
+    "owner": "helix",
+    "repo": "localhost--local--default",
+    "ref": "master",
+    "path": "/htdocs"
+  },
+  "directoryIndex": "index.html",
+  "name": "default"
+}
+2019-08-07T00:17:18.866Z debug: resolved /favicon.ico -> ico
+2019-08-07T00:17:18.866Z debug: fetching static resource from http://127.0.0.1:60597/raw/helix/localhost--local--default/master/favicon.ico
+2019-08-07T00:17:18.871Z debug: fetching static resource from http://127.0.0.1:60597/raw/helix/localhost--local--default/master/htdocs/favicon.ico
+2019-08-07T18:00:38.530Z debug: Stopping helix simulation server..
+2019-08-07T18:00:38.534Z info: Local Helix Dev server stopped.
+2019-08-07T18:00:38.535Z debug: Stopping local git server...
+2019-08-07T18:00:38.619Z debug: Initialized helix-config with: 
+2019-08-07T18:00:38.619Z debug:      srcPath: /Users/mrosier/OneDrive - Adobe Systems Incorporated/Documents/helix/helix-cli/entry/src
+2019-08-07T18:00:38.619Z debug:     buildDir: /Users/mrosier/OneDrive - Adobe Systems Incorporated/Documents/helix/helix-cli/entry/.hlx/build
+2019-08-07T18:00:38.619Z debug: Launching helix simulation server for development...
+2019-08-07T18:00:38.621Z info: Starting helix-simulator v2.12.18
+2019-08-07T18:00:38.621Z info: Local Helix Dev server up and running: http://localhost:3000/
+2019-08-07T18:02:03.182Z debug: Stopping helix simulation server..
+2019-08-07T18:02:03.183Z info: Local Helix Dev server stopped.
+2019-08-07T18:02:03.204Z debug: Initialized helix-config with: 
+2019-08-07T18:02:03.204Z debug:      srcPath: /Users/mrosier/OneDrive - Adobe Systems Incorporated/Documents/helix/helix-cli/entry/src
+2019-08-07T18:02:03.204Z debug:     buildDir: /Users/mrosier/OneDrive - Adobe Systems Incorporated/Documents/helix/helix-cli/entry/.hlx/build
+2019-08-07T18:02:03.204Z debug: Launching helix simulation server for development...
+2019-08-07T18:02:03.206Z info: Starting helix-simulator v2.12.18
+2019-08-07T18:02:03.206Z info: Local Helix Dev server up and running: http://localhost:3000/
+2019-08-07T19:25:46.859Z debug: Initialized helix-config with: 
+2019-08-07T19:25:46.860Z debug:      srcPath: /Users/mrosier/OneDrive - Adobe Systems Incorporated/Documents/helix/helix-cli/entry/src
+2019-08-07T19:25:46.860Z debug:     buildDir: /Users/mrosier/OneDrive - Adobe Systems Incorporated/Documents/helix/helix-cli/entry/.hlx/build
+2019-08-07T19:25:47.817Z debug: Launching helix simulation server for development...
+2019-08-07T19:25:47.823Z debug: Stopping helix simulation server..
+2019-08-07T19:27:56.150Z debug: Initialized helix-config with: 
+2019-08-07T19:27:56.151Z debug:      srcPath: /Users/mrosier/OneDrive - Adobe Systems Incorporated/Documents/helix/helix-cli/entry/src
+2019-08-07T19:27:56.151Z debug:     buildDir: /Users/mrosier/OneDrive - Adobe Systems Incorporated/Documents/helix/helix-cli/entry/.hlx/build
+2019-08-07T19:27:57.045Z debug: Launching helix simulation server for development...
+2019-08-07T19:27:57.050Z info: Starting helix-simulator v2.12.18
+2019-08-07T19:27:57.052Z info: Local Helix Dev server up and running: http://localhost:3000/
+2019-08-07T19:27:57.160Z debug: current strain: default: {
+  "code": "https://github.com/MarquiseRosier/helix-cli.git#master",
+  "content": "https://github.com/MarquiseRosier/helix-cli.git#master",
+  "static": "https://github.com/MarquiseRosier/helix-cli.git/htdocs#master",
+  "directoryIndex": "index.html",
+  "package": "mrosier/5e6b4cd59edf91c045b82525a8a5fe822f49650b",
+  "name": "default"
+}
+2019-08-07T19:27:57.161Z debug: resolved /index.html -> html
+2019-08-07T19:27:57.162Z debug: current strain: default: {
+  "code": "https://github.com/MarquiseRosier/helix-cli.git#master",
+  "content": "https://github.com/MarquiseRosier/helix-cli.git#master",
+  "static": "https://github.com/MarquiseRosier/helix-cli.git/htdocs#master",
+  "directoryIndex": "index.html",
+  "package": "mrosier/5e6b4cd59edf91c045b82525a8a5fe822f49650b",
+  "name": "default"
+}
+2019-08-07T19:27:57.162Z debug: resolved /style.css -> css
+2019-08-07T19:27:57.162Z debug: current strain: default: {
+  "code": "https://github.com/MarquiseRosier/helix-cli.git#master",
+  "content": "https://github.com/MarquiseRosier/helix-cli.git#master",
+  "static": "https://github.com/MarquiseRosier/helix-cli.git/htdocs#master",
+  "directoryIndex": "index.html",
+  "package": "mrosier/5e6b4cd59edf91c045b82525a8a5fe822f49650b",
+  "name": "default"
+}
+2019-08-07T19:27:57.162Z debug: resolved /helix_logo.png -> png
+2019-08-07T19:27:57.162Z debug: current strain: default: {
+  "code": "https://github.com/MarquiseRosier/helix-cli.git#master",
+  "content": "https://github.com/MarquiseRosier/helix-cli.git#master",
+  "static": "https://github.com/MarquiseRosier/helix-cli.git/htdocs#master",
+  "directoryIndex": "index.html",
+  "package": "mrosier/5e6b4cd59edf91c045b82525a8a5fe822f49650b",
+  "name": "default"
+}
+2019-08-07T19:27:57.163Z debug: resolved /favicon.ico -> ico
+2019-08-07T19:27:58.412Z debug: Constructing HTML Pipeline
+2019-08-07T19:27:58.412Z debug: Creating pipeline
+2019-08-07T19:27:58.413Z debug: initializing ajv {"useDefaults":true,"coerceTypes":true}
+2019-08-07T19:27:58.428Z debug: - https://ns.adobe.com/helix/pipeline/action
+2019-08-07T19:27:58.429Z debug: - https://ns.adobe.com/helix/pipeline/content
+2019-08-07T19:27:58.429Z debug: - https://ns.adobe.com/helix/pipeline/context
+2019-08-07T19:27:58.430Z debug: - https://ns.adobe.com/helix/pipeline/mdast
+2019-08-07T19:27:58.430Z debug: - https://ns.adobe.com/helix/pipeline/meta
+2019-08-07T19:27:58.430Z debug: - https://ns.adobe.com/helix/pipeline/position
+2019-08-07T19:27:58.431Z debug: - https://ns.adobe.com/helix/pipeline/rawrequest
+2019-08-07T19:27:58.431Z debug: - https://ns.adobe.com/helix/pipeline/request
+2019-08-07T19:27:58.431Z debug: - https://ns.adobe.com/helix/pipeline/response
+2019-08-07T19:27:58.432Z debug: - https://ns.adobe.com/helix/pipeline/secrets
+2019-08-07T19:27:58.432Z debug: - https://ns.adobe.com/helix/pipeline/section
+2019-08-07T19:27:58.432Z debug: - https://ns.adobe.com/helix/pipeline/textcoordinates
+2019-08-07T19:27:58.432Z debug: ajv initialized
+2019-08-07T19:27:58.432Z debug: Coercing secrets
+2019-08-07T19:27:58.435Z debug: Running HTML pipeline
+2019-08-07T19:27:58.436Z debug: initializing ajv {}
+2019-08-07T19:27:58.440Z debug: - https://ns.adobe.com/helix/pipeline/action
+2019-08-07T19:27:58.440Z debug: - https://ns.adobe.com/helix/pipeline/content
+2019-08-07T19:27:58.440Z debug: - https://ns.adobe.com/helix/pipeline/context
+2019-08-07T19:27:58.441Z debug: - https://ns.adobe.com/helix/pipeline/mdast
+2019-08-07T19:27:58.441Z debug: - https://ns.adobe.com/helix/pipeline/meta
+2019-08-07T19:27:58.441Z debug: - https://ns.adobe.com/helix/pipeline/position
+2019-08-07T19:27:58.442Z debug: - https://ns.adobe.com/helix/pipeline/rawrequest
+2019-08-07T19:27:58.442Z debug: - https://ns.adobe.com/helix/pipeline/request
+2019-08-07T19:27:58.442Z debug: - https://ns.adobe.com/helix/pipeline/response
+2019-08-07T19:27:58.442Z debug: - https://ns.adobe.com/helix/pipeline/secrets
+2019-08-07T19:27:58.442Z debug: - https://ns.adobe.com/helix/pipeline/section
+2019-08-07T19:27:58.443Z debug: - https://ns.adobe.com/helix/pipeline/textcoordinates
+2019-08-07T19:27:58.443Z debug: ajv initialized
+2019-08-07T19:27:58.455Z debug: ignoring github ref resolving. RESOLVE_GITREF_SERVICE is not set.
+2019-08-07T19:27:58.456Z debug: fetching Markdown from https://raw.github.com/MarquiseRosier/helix-cli/master/index.md
+2019-08-07T19:27:58.458Z debug: fetching static resource from https://raw.github.com/MarquiseRosier/helix-cli/master/style.css
+2019-08-07T19:27:58.459Z debug: fetching static resource from https://raw.github.com/MarquiseRosier/helix-cli/master/helix_logo.png
+2019-08-07T19:27:58.475Z debug: fetching static resource from https://raw.github.com/MarquiseRosier/helix-cli/master/favicon.ico
+2019-08-07T19:27:58.741Z debug: fetching static resource from https://raw.github.com/MarquiseRosier/helix-cli/master/htdocs/style.css
+2019-08-07T19:27:58.947Z debug: fetching static resource from https://raw.github.com/MarquiseRosier/helix-cli/master/htdocs/favicon.ico
+2019-08-07T19:27:58.967Z error: Could not find Markdown at https://raw.github.com/MarquiseRosier/helix-cli/master/index.md
+2019-08-07T19:27:58.970Z info: Writing context dumps to: /Users/mrosier/OneDrive - Adobe Systems Incorporated/Documents/helix/helix-cli/entry/logs/debug/context_dump_20190707-1927-58.0969_index.html_1383b274a9347a16fd0daf5bdfb59542
+2019-08-07T19:27:58.979Z debug: fetching static resource from https://raw.github.com/MarquiseRosier/helix-cli/master/index.html
+2019-08-07T19:27:58.980Z debug: fetching static resource from https://raw.github.com/MarquiseRosier/helix-cli/master/htdocs/helix_logo.png
+2019-08-07T19:27:59.181Z error: Resource not found: /favicon.ico
+2019-08-07T19:27:59.252Z error: Resource not found: /style.css
+2019-08-07T19:27:59.442Z error: Resource not found: /helix_logo.png
+2019-08-07T19:27:59.468Z debug: fetching static resource from https://raw.github.com/MarquiseRosier/helix-cli/master/htdocs/index.html
+2019-08-07T19:27:59.710Z error: Resource not found: /index.html
+2019-08-07T19:28:56.419Z debug: Initialized helix-config with: 
+2019-08-07T19:28:56.420Z debug:      srcPath: /Users/mrosier/OneDrive - Adobe Systems Incorporated/Documents/helix/helix-cli/entry/src
+2019-08-07T19:28:56.420Z debug:     buildDir: /Users/mrosier/OneDrive - Adobe Systems Incorporated/Documents/helix/helix-cli/entry/.hlx/build
+2019-08-07T19:28:57.346Z debug: Launching helix simulation server for development...
+2019-08-07T19:28:57.352Z debug: Stopping helix simulation server..
+2019-08-07T19:29:18.674Z debug: Initialized helix-config with: 
+2019-08-07T19:29:18.674Z debug:      srcPath: /Users/mrosier/OneDrive - Adobe Systems Incorporated/Documents/helix/helix-cli/entry/src
+2019-08-07T19:29:18.674Z debug:     buildDir: /Users/mrosier/OneDrive - Adobe Systems Incorporated/Documents/helix/helix-cli/entry/.hlx/build
+2019-08-07T19:29:19.564Z debug: Launching helix simulation server for development...
+2019-08-07T19:29:19.571Z info: Starting helix-simulator v2.12.18
+2019-08-07T19:29:19.572Z info: Local Helix Dev server up and running: http://localhost:3000/
+2019-08-07T19:29:19.663Z debug: current strain: default: {
+  "code": "https://github.com/MarquiseRosier/helix-cli.git/entry#master",
+  "content": "https://github.com/MarquiseRosier/helix-cli.git/entry#master",
+  "static": "https://github.com/MarquiseRosier/helix-cli.git/entry/htdocs#master",
+  "directoryIndex": "index.html",
+  "package": "mrosier/5e6b4cd59edf91c045b82525a8a5fe822f49650b",
+  "name": "default"
+}
+2019-08-07T19:29:19.664Z debug: resolved /index.html -> html
+2019-08-07T19:29:20.266Z debug: Constructing HTML Pipeline
+2019-08-07T19:29:20.266Z debug: Creating pipeline
+2019-08-07T19:29:20.268Z debug: initializing ajv {"useDefaults":true,"coerceTypes":true}
+2019-08-07T19:29:20.277Z debug: - https://ns.adobe.com/helix/pipeline/action
+2019-08-07T19:29:20.277Z debug: - https://ns.adobe.com/helix/pipeline/content
+2019-08-07T19:29:20.278Z debug: - https://ns.adobe.com/helix/pipeline/context
+2019-08-07T19:29:20.279Z debug: - https://ns.adobe.com/helix/pipeline/mdast
+2019-08-07T19:29:20.279Z debug: - https://ns.adobe.com/helix/pipeline/meta
+2019-08-07T19:29:20.279Z debug: - https://ns.adobe.com/helix/pipeline/position
+2019-08-07T19:29:20.279Z debug: - https://ns.adobe.com/helix/pipeline/rawrequest
+2019-08-07T19:29:20.280Z debug: - https://ns.adobe.com/helix/pipeline/request
+2019-08-07T19:29:20.280Z debug: - https://ns.adobe.com/helix/pipeline/response
+2019-08-07T19:29:20.280Z debug: - https://ns.adobe.com/helix/pipeline/secrets
+2019-08-07T19:29:20.280Z debug: - https://ns.adobe.com/helix/pipeline/section
+2019-08-07T19:29:20.280Z debug: - https://ns.adobe.com/helix/pipeline/textcoordinates
+2019-08-07T19:29:20.280Z debug: ajv initialized
+2019-08-07T19:29:20.281Z debug: Coercing secrets
+2019-08-07T19:29:20.283Z debug: Running HTML pipeline
+2019-08-07T19:29:20.284Z debug: initializing ajv {}
+2019-08-07T19:29:20.287Z debug: - https://ns.adobe.com/helix/pipeline/action
+2019-08-07T19:29:20.287Z debug: - https://ns.adobe.com/helix/pipeline/content
+2019-08-07T19:29:20.287Z debug: - https://ns.adobe.com/helix/pipeline/context
+2019-08-07T19:29:20.288Z debug: - https://ns.adobe.com/helix/pipeline/mdast
+2019-08-07T19:29:20.288Z debug: - https://ns.adobe.com/helix/pipeline/meta
+2019-08-07T19:29:20.288Z debug: - https://ns.adobe.com/helix/pipeline/position
+2019-08-07T19:29:20.288Z debug: - https://ns.adobe.com/helix/pipeline/rawrequest
+2019-08-07T19:29:20.289Z debug: - https://ns.adobe.com/helix/pipeline/request
+2019-08-07T19:29:20.289Z debug: - https://ns.adobe.com/helix/pipeline/response
+2019-08-07T19:29:20.289Z debug: - https://ns.adobe.com/helix/pipeline/secrets
+2019-08-07T19:29:20.289Z debug: - https://ns.adobe.com/helix/pipeline/section
+2019-08-07T19:29:20.289Z debug: - https://ns.adobe.com/helix/pipeline/textcoordinates
+2019-08-07T19:29:20.289Z debug: ajv initialized
+2019-08-07T19:29:20.301Z debug: ignoring github ref resolving. RESOLVE_GITREF_SERVICE is not set.
+2019-08-07T19:29:20.302Z debug: fetching Markdown from https://raw.github.com/MarquiseRosier/helix-cli/master/entry/index.md
+2019-08-07T19:29:20.858Z debug: Parsing markdown from request body starting with <!--
+2019-08-07T19:29:20.886Z debug: Parsing Markdown Metadata from 1 sections
+2019-08-07T19:29:20.891Z debug: Turning Markdown into HTML from object
+2019-08-07T19:29:20.944Z debug: Setting Surrogate-Key header
+2019-08-07T19:29:20.956Z debug: total processing time: 673.814037ms
+2019-08-07T19:29:20.956Z debug: timing: p00;dur=0.589042;desc=resolveRef ,p01;dur=557.037853;desc=fetch ,p02;dur=13.75931;desc=parseMarkdown ,p03;dur=2.035405;desc=parseFrontmatter ,p04;dur=1.674855;desc=find ,p05;dur=7.496686;desc=reformat ,p06;dur=2.673427;desc=split ,p07;dur=2.130621;desc=getmetadata ,p08;dur=0.878724;desc=unwrap ,p09;dur=0.780885;desc=selectstrain ,p10;dur=0.958;desc=selecttest ,p11;dur=24.609858;desc=html ,p12;dur=1.217889;desc=sanitize ,p13;dur=25.841765;desc=once ,p14;dur=0.76401;desc=setmime ,p15;dur=0.774815;desc=cache ,p16;dur=1.334679;desc=key ,p17;dur=3.24333;desc=tovdom ,p18;dur=0.898993;desc=clean ,p19;dur=0.739759;desc=rewrite ,p20;dur=1.973419;desc=addHeaders ,p21;dur=1.438335;desc=stringify ,p22;dur=0.773342;desc=flag ,p23;dur=1.469618;desc=debug ,p24;dur=0.186149;desc=report
+2019-08-07T19:29:20.967Z debug: current strain: default: {
+  "code": "https://github.com/MarquiseRosier/helix-cli.git/entry#master",
+  "content": "https://github.com/MarquiseRosier/helix-cli.git/entry#master",
+  "static": "https://github.com/MarquiseRosier/helix-cli.git/entry/htdocs#master",
+  "directoryIndex": "index.html",
+  "package": "mrosier/5e6b4cd59edf91c045b82525a8a5fe822f49650b",
+  "name": "default"
+}
+2019-08-07T19:29:20.967Z debug: resolved /style.css -> css
+2019-08-07T19:29:20.967Z debug: fetching static resource from https://raw.github.com/MarquiseRosier/helix-cli/master/style.css
+2019-08-07T19:29:20.969Z debug: current strain: default: {
+  "code": "https://github.com/MarquiseRosier/helix-cli.git/entry#master",
+  "content": "https://github.com/MarquiseRosier/helix-cli.git/entry#master",
+  "static": "https://github.com/MarquiseRosier/helix-cli.git/entry/htdocs#master",
+  "directoryIndex": "index.html",
+  "package": "mrosier/5e6b4cd59edf91c045b82525a8a5fe822f49650b",
+  "name": "default"
+}
+2019-08-07T19:29:20.970Z debug: resolved /helix_logo.png -> png
+2019-08-07T19:29:20.970Z debug: fetching static resource from https://raw.github.com/MarquiseRosier/helix-cli/master/helix_logo.png
+2019-08-07T19:29:21.199Z debug: fetching static resource from https://raw.github.com/MarquiseRosier/helix-cli/master/entry/htdocs/helix_logo.png
+2019-08-07T19:29:21.439Z debug: fetching static resource from https://raw.github.com/MarquiseRosier/helix-cli/master/entry/htdocs/style.css
+2019-08-07T19:29:21.463Z error: Resource not found: /helix_logo.png

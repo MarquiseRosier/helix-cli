@@ -1,0 +1,6 @@
+127.0.0.1 - GET /raw/helix/localhost--local--default/master/index.md HTTP/1.1 200 - - 25.708 ms
+127.0.0.1 - GET /raw/helix/localhost--local--default/master/style.css HTTP/1.1 404 10 - 6.100 ms
+127.0.0.1 - GET /raw/helix/localhost--local--default/master/helix_logo.png HTTP/1.1 200 - - 9.684 ms
+127.0.0.1 - GET /raw/helix/localhost--local--default/master/htdocs/style.css HTTP/1.1 200 - - 11.591 ms
+127.0.0.1 - GET /raw/helix/localhost--local--default/master/favicon.ico HTTP/1.1 404 10 - 3.663 ms
+127.0.0.1 - GET /raw/helix/localhost--local--default/master/htdocs/favicon.ico HTTP/1.1 200 - - 5.345 ms

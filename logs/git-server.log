@@ -1,0 +1,6 @@
+2019-08-07T00:17:17.378Z debug: configuration successfully read: <internal>
+2019-08-07T00:17:17.381Z info: [66445] HTTP: listening on port 60597
+2019-08-07T00:17:17.382Z debug: configuration successfully read: <internal>
+2019-08-07T00:17:18.807Z debug: [rawHandler] resource not found: Not found: style.css
+2019-08-07T00:17:18.870Z debug: [rawHandler] resource not found: Not found: favicon.ico
+2019-08-07T18:00:38.536Z info: HTTP: server stopped.
