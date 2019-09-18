@@ -16,7 +16,7 @@
   -->
 ![helix-logo](./helix_logo.png) <!-- this image is served from this content repository -->
 
-# Helix - entry
+# Helix - entry (V2)
 
 It works! entry is up and running.
 
